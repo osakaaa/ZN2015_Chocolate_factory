@@ -1,0 +1,141 @@
+01:14:32 [CORE]{c}-STA: Modules dir: /opt/xplico/bin/modules
+01:14:32 [CORE]{c}-STA: Tmp dir: tmp/xplico
+01:14:32 [CORE]{c}-STA: Module ---> dis_pcapf.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_pol.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_eth.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_pppoe.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_ppp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_ip.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_ipv6.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_tcp_soft.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_udp.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_http.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_pop.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_imap.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_smtp.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_httpfd.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_sip.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_rtp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_rtcp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_sdp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_l2tp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_vlan.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_ftp.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_dns.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_icmp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_nntp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_irc.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_ipp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_pjl.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_mms.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_sll.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_tftp.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_ieee80211.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_llc.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_fbwchat.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_telnet.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_webmail.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_msn.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_paltalk.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_arp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_paltalk_exp.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_radiotap.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_icmpv6.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_ppi.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_syslog.so log --> FEWITDS
+01:14:32 [CORE]{c}-STA: Module ---> dis_tcp_grb.so log --> FEWS
+01:14:32 [CORE]{c}-STA: Module ---> dis_udp_grb.so log --> FEWS
+01:14:32 [CORE]{c}-WARNING: dissector 'ip' dependence 'chdlc->chdlc.protocol' not found
+01:14:32 [CORE]{c}-WARNING: dissector 'ip' dependence 'gtp->gtp.msg' not found
+01:14:32 [CORE]{c}-WARNING: dissector 'ipv6' dependence 'chdlc->chdlc.protocol' not found
+01:14:32 [CORE]{c}-WARNING: Assume 'l2tp' protocol flow dissector as exstension of packet dissector in case of 'udp' protocol
+01:14:32 [CORE]{c}-DEBUG: rule: ((((ip.src == pkt.ip.src) AND (tcp.srcport == pkt.tcp.srcport)) AND ((ip.dst == pkt.ip.dst) AND (tcp.dstport == pkt.tcp.dstport))) OR (((ip.src == pkt.ip.dst) AND (tcp.srcport == pkt.tcp.dstport)) AND ((ip.dst == pkt.ip.src) AND (tcp.dstport == pkt.tcp.srcport))))
+01:14:32 [CORE]{c}-DEBUG: First step: (((0 AND 1) AND (2 AND 3)) OR ((4 AND 5) AND (6 AND 7)))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 1: ((8 AND 9) OR (10 AND 11))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 2: (12 OR 13)
+01:14:32 [CORE]{c}-DEBUG: Boolean step 3: 14
+01:14:32 [CORE]{c}-DEBUG: Simil 0 <---> 2
+01:14:32 [CORE]{c}-DEBUG: Simil 1 <---> 3
+01:14:32 [CORE]{c}-DEBUG: Simil 2 <---> 4
+01:14:32 [CORE]{c}-DEBUG: Simil 3 <---> 5
+01:14:32 [CORE]{c}-DEBUG: Simil 4 <---> 6
+01:14:32 [CORE]{c}-DEBUG: Simil 5 <---> 7
+01:14:32 [CORE]{c}-DEBUG: rule: ((((ipv6.src == pkt.ipv6.src) AND (tcp.srcport == pkt.tcp.srcport)) AND ((ipv6.dst == pkt.ipv6.dst) AND (tcp.dstport == pkt.tcp.dstport))) OR (((ipv6.src == pkt.ipv6.dst) AND (tcp.srcport == pkt.tcp.dstport)) AND ((ipv6.dst == pkt.ipv6.src) AND (tcp.dstport == pkt.tcp.srcport))))
+01:14:32 [CORE]{c}-DEBUG: First step: (((0 AND 1) AND (2 AND 3)) OR ((4 AND 5) AND (6 AND 7)))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 1: ((8 AND 9) OR (10 AND 11))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 2: (12 OR 13)
+01:14:32 [CORE]{c}-DEBUG: Boolean step 3: 14
+01:14:32 [CORE]{c}-DEBUG: Simil 0 <---> 2
+01:14:32 [CORE]{c}-DEBUG: Simil 1 <---> 3
+01:14:32 [CORE]{c}-DEBUG: Simil 2 <---> 4
+01:14:32 [CORE]{c}-DEBUG: Simil 3 <---> 5
+01:14:32 [CORE]{c}-DEBUG: Simil 4 <---> 6
+01:14:32 [CORE]{c}-DEBUG: Simil 5 <---> 7
+01:14:32 [CORE]{c}-DEBUG: rule: ((((ip.src == pkt.ip.src) AND (udp.srcport == pkt.udp.srcport)) AND ((ip.dst == pkt.ip.dst) AND (udp.dstport == pkt.udp.dstport))) OR (((ip.dst == pkt.ip.src) AND (udp.dstport == pkt.udp.srcport)) AND ((ip.src == pkt.ip.dst) AND (udp.srcport == pkt.udp.dstport))))
+01:14:32 [CORE]{c}-DEBUG: First step: (((0 AND 1) AND (2 AND 3)) OR ((4 AND 5) AND (6 AND 7)))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 1: ((8 AND 9) OR (10 AND 11))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 2: (12 OR 13)
+01:14:32 [CORE]{c}-DEBUG: Boolean step 3: 14
+01:14:32 [CORE]{c}-DEBUG: Simil 0 <---> 2
+01:14:32 [CORE]{c}-DEBUG: Simil 1 <---> 3
+01:14:32 [CORE]{c}-DEBUG: Simil 2 <---> 4
+01:14:32 [CORE]{c}-DEBUG: Simil 3 <---> 5
+01:14:32 [CORE]{c}-DEBUG: Simil 4 <---> 6
+01:14:32 [CORE]{c}-DEBUG: Simil 5 <---> 7
+01:14:32 [CORE]{c}-DEBUG: rule: ((((ipv6.src == pkt.ipv6.src) AND (udp.srcport == pkt.udp.srcport)) AND ((ipv6.dst == pkt.ipv6.dst) AND (udp.dstport == pkt.udp.dstport))) OR (((ipv6.dst == pkt.ipv6.src) AND (udp.dstport == pkt.udp.srcport)) AND ((ipv6.src == pkt.ipv6.dst) AND (udp.srcport == pkt.udp.dstport))))
+01:14:32 [CORE]{c}-DEBUG: First step: (((0 AND 1) AND (2 AND 3)) OR ((4 AND 5) AND (6 AND 7)))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 1: ((8 AND 9) OR (10 AND 11))
+01:14:32 [CORE]{c}-DEBUG: Boolean step 2: (12 OR 13)
+01:14:32 [CORE]{c}-DEBUG: Boolean step 3: 14
+01:14:32 [CORE]{c}-DEBUG: Simil 0 <---> 2
+01:14:32 [CORE]{c}-DEBUG: Simil 1 <---> 3
+01:14:32 [CORE]{c}-DEBUG: Simil 2 <---> 4
+01:14:32 [CORE]{c}-DEBUG: Simil 3 <---> 5
+01:14:32 [CORE]{c}-DEBUG: Simil 4 <---> 6
+01:14:32 [CORE]{c}-DEBUG: Simil 5 <---> 7
+01:14:32 [CORE]{c}-INFO: 'pcapf' stack frame size: 112b with 3 info
+01:14:32 [CORE]{c}-INFO: 'pol' stack frame size: 144b with 5 info
+01:14:32 [CORE]{c}-INFO: 'eth' stack frame size: 96b with 2 info
+01:14:32 [CORE]{c}-INFO: 'pppoe' stack frame size: 112b with 3 info
+01:14:32 [CORE]{c}-INFO: 'ppp' stack frame size: 80b with 1 info
+01:14:32 [CORE]{c}-INFO: 'ip' stack frame size: 128b with 4 info
+01:14:32 [CORE]{c}-INFO: 'ipv6' stack frame size: 128b with 4 info
+01:14:32 [CORE]{c}-INFO: 'tcp' stack frame size: 128b with 4 info
+01:14:32 [CORE]{c}-INFO: 'udp' stack frame size: 96b with 2 info
+01:14:32 [CORE]{c}-INFO: 'http' stack frame size: 144b with 5 info
+01:14:32 [CORE]{c}-INFO: 'pop' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'imap' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'smtp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'httpfd' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'sip' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'rtp' stack frame size: 144b with 5 info
+01:14:32 [CORE]{c}-INFO: 'rtcp' stack frame size: 80b with 1 info
+01:14:32 [CORE]{c}-INFO: 'sdp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'l2tp' stack frame size: 112b with 3 info
+01:14:32 [CORE]{c}-INFO: 'vlan' stack frame size: 96b with 2 info
+01:14:32 [CORE]{c}-INFO: 'ftp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'dns' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'icmp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'nntp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'irc' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'ipp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'pjl' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'mms' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'sll' stack frame size: 80b with 1 info
+01:14:32 [CORE]{c}-INFO: 'tftp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'wlan' stack frame size: 80b with 1 info
+01:14:32 [CORE]{c}-INFO: 'llc' stack frame size: 80b with 1 info
+01:14:32 [CORE]{c}-INFO: 'fbwchat' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'telnet' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'webmail' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'msn' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'paltalk' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'arp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'paltalk_exp' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'radiotap' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'icmpv6' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'ppi' stack frame size: 80b with 1 info
+01:14:32 [CORE]{c}-INFO: 'syslog' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'tcp-grb' stack frame size: 64b with 0 info
+01:14:32 [CORE]{c}-INFO: 'udp-grb' stack frame size: 64b with 0 info
+01:14:32 [DISP]{c}-DEBUG: CLI Dispatcher

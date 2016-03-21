@@ -1,0 +1,12 @@
+<Order>
+    <Chocolate>
+        <ChocoType>Milk Chocolate</ChocoType>
+        <ChocoQuantity>123</ChocoQuantity>
+    </Chocolate>
+    <Delivery>
+        <Name>King Chinpoko</Name>
+        <Address>493 Buck Drive West Valley City, UT 84119</Address>
+        <Phone>+1(666)100-21-13</Phone>
+        <Email>Chinpoko@ZN_choco.net</Email>
+    </Delivery>
+</Order>
